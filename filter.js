@@ -1,12 +1,9 @@
 function mypro() {
-  return console.log('hello world...');
+  return 'hello world...';
 }
 
-let test = mypro;
-test();
+function greet(testfunc) {
+  console.log(testfunc());
+}
 
-// function greet(testfunc) {
-//   console.log(testfunc());
-// }
-
-// greet(mypro);
+greet(mypro);
