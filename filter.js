@@ -1,9 +1,9 @@
-function mypro() {
-  return 'hello world...';
+var user = {
+  name: 'meenu',
+  address: 'new delhi',
+};
+function test(name, address) {
+  return 'Name: ' + name + ', Address: ' + address;
 }
-
-function greet(testfunc) {
-  console.log(testfunc());
-}
-
-greet(mypro);
+var functionCall1 = test.call(user.name, user.address);
+console.log(functionCall1);
